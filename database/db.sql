@@ -18,7 +18,7 @@ USE `database_links` ;
 -- Table `database_links`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `database_links`.`users` (
-  `id` INT(11) UNSIGNED NOT NULL,
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(30) NOT NULL,
   `password` VARCHAR(30) NOT NULL,
   `fullname` VARCHAR(100) NOT NULL,
@@ -30,7 +30,7 @@ ENGINE = InnoDB;
 -- Table `database_links`.`links`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `database_links`.`links` (
-  `id` INT(11) UNSIGNED NOT NULL,
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(100) NOT NULL,
   `url` VARCHAR(255) NOT NULL,
   `description` TEXT NULL,
